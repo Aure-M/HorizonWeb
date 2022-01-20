@@ -45,6 +45,14 @@ const routes = [
         path: '/posts/new',
         component: () => import('@/views/Thread/ThreadNew.vue'),
     },
+    {
+        path: '/guide/accueil',
+        component: () => import('@/views/Guide/GuideMain.vue')
+    },
+    {
+        path: '/guide/contacts',
+        component: () => import('@/views/Guide/GuideContacts.vue')
+    },
 
     {
         path: '/posts/:id',
