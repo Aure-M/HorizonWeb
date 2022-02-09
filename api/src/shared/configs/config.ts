@@ -24,6 +24,9 @@ interface Config {
     port: number;
     scheme: string;
   };
+  redis: {
+    url: string;
+  };
   tokens: {
     accessTokenSecret: string;
     accessTokenExpiration: string;
@@ -108,6 +111,13 @@ export const config = createProfiguration<Config>({
       default: 'http',
       format: ['http', 'https'],
       env: 'TYPESENSE_SCHEME',
+    },
+  },
+  redis: {
+    url: {
+      default: 'redis://localhost:6379',
+      format: String,
+      env: 'REDIS_URL',
     },
   },
   storage: {

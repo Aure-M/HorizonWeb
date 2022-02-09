@@ -6,10 +6,12 @@ import {
   Post,
   Request,
   Response,
+  Session,
   UseGuards,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { Request as Req, Response as Res } from 'express';
+import { Session as SessionObj } from 'express-session';
 import { computedConfig, config } from '../shared/configs/config';
 import { CurrentUser } from '../shared/lib/decorators/current-user.decorator';
 import { Public } from '../shared/lib/decorators/public.decorator';
@@ -52,8 +54,16 @@ export class AuthController {
   @Public()
   @UseGuards(MyEfreiAuthGuard)
   @Get('myefrei/callback')
-  public async myefreiCallback(@CurrentUser() user: User, @Response() res: Res): Promise<void> {
+  public async myefreiCallback(
+    @CurrentUser() user: User,
+    @Session() session: SessionObj,
+    @Response() res: Res,
+  ): Promise<void> {
     const login = await this.authService.login(user);
+
+    // We can now destroy the session, which was only use for the OIDC login to use states.
+    // From now on, everything will be handled by JWTs.
+    session.destroy(() => {}); // eslint-disable-line @typescript-eslint/no-empty-function
 
     res.cookie('accessToken', login.accessToken, cookieOptions)
       .cookie('refreshToken', login.refreshToken, cookieOptions)

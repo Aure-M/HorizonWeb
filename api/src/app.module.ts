@@ -19,6 +19,7 @@ import { ReportsModule } from './reports/reports.module';
 import storageConfig from './shared/configs/storage.config';
 import { PoliciesGuard } from './shared/modules/authorization';
 import { CaslModule } from './shared/modules/casl/casl.module';
+import { RedisModule } from './shared/modules/redis/redis.module';
 import { SocialsModule } from './socials/socials.module';
 import { StatisticsModule } from './statistics/statistics.module';
 import { SubjectsModule } from './subjects/subjects.module';
@@ -32,6 +33,7 @@ import { VotesModule } from './votes/votes.module';
     ConfigModule.forRoot(),
     EventEmitterModule.forRoot(),
     MikroOrmModule.forRoot(),
+    RedisModule,
     S3Module.forRoot({ config: storageConfig }),
     BlogsModule,
     AuthModule,
