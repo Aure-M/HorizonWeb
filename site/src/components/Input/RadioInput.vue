@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between rounded divide-x cursor-pointer bg-1 divide-color-0 raised">
+    <div class="flex justify-between rounded divide-x divide-slate-500 cursor-pointer bg-1 raised">
         <button
             v-for="(choice, i) in choices"
             :key="i"

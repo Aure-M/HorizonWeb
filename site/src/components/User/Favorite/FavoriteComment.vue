@@ -1,9 +1,7 @@
 <template>
     <div class="flex m-4 rounded-md bg-1">
-        <div class="ml-2 border-l-2 border-dashed border-color-2-alt" />
-        <div
-            class="flex object-cover flex-col justify-center px-8 ml-2 border-l-2 border-dashed border-color-2-alt"
-        >
+        <div class="ml-2 border-l-2 border-dashed" />
+        <div class="flex object-cover flex-col justify-center px-8 ml-2 border-l-2 border-dashed">
             <font-awesome-icon icon="comment" class="hidden text-xl text-center md:block text-2" />
         </div>
         <div class="flex w-full">

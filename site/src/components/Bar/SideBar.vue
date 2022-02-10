@@ -53,7 +53,7 @@
 
             <div class="flex gap-4 justify-center items-center p-4">
                 <p class="text-1 text-bold" :class="{ 'hidden': !showUncollapsed }">Mode Sombre</p>
-                <SwitchInput v-model="theme" @click="$store.dispatch('user/switchTheme')" />
+                <SwitchInput v-model="mode" @click="$store.dispatch('user/switchMode')" />
             </div>
 
             <div
@@ -97,8 +97,8 @@
             showUncollapsed() {
                 return this.uncollapsed || (this.collapsing && !this.uncollapsed)
             },
-            theme() {
-                return this.$store.state.user.theme === 'dark'
+            mode() {
+                return this.$store.state.user.mode === 'dark'
             },
             loggedIn() {
                 return this.$store.state.auth.loggedIn ?? false

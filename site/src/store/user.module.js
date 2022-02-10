@@ -5,7 +5,38 @@ import { ITEMS_PER_PAGE, settleQuery } from './constants'
 import { uniqBy } from 'lodash'
 
 const initialState = {
-    theme: JSON.parse(localStorage.getItem('themePreference')) === 'dark' ? 'dark' : 'light',
+    mode: JSON.parse(localStorage.getItem('modePreference')) === 'dark' ? 'dark' : 'light',
+    colors: JSON.parse(localStorage.getItem('colorsPreference')) || {
+        '--bg-0-light': '#fafafa',
+        '--bg-0-dark': '#1a1a1a',
+        '--bg-1-light': '#f5f5f5',
+        '--bg-1-dark': '#1f1f1f',
+        '--bg-2-light': '#ebebeb',
+        '--bg-2-dark': '#2a2a2a',
+        '--bg-3-light': '#e1e1e1',
+        '--bg-3-dark': '#2f2f2f',
+        '--bg-4-light': '#d6d6d6',
+        '--bg-4-dark': '#343434',
+        '--bg-5-light': '#ccc',
+        '--bg-5-dark': '#333',
+        '--bg-6-light': '#c2c2c2',
+        '--bg-6-dark': '#3b3b3b',
+        '--text-0-light': '#333',
+        '--text-0-dark': '#fff',
+        '--text-1-light': '#666',
+        '--text-1-dark': '#f3f3f3',
+        '--text-2-light': '#999',
+        '--text-2-dark': '#e5e5e5',
+        '--text-3-light': '#ccc',
+        '--text-3-dark': '#d9d9d9',
+        '--text-4-light': '#fff',
+        '--text-4-dark': '#c3c3c3',
+        '--text-5-light': '#fafafa',
+        '--text-5-dark': '#b3b3b3',
+        '--text-6-light': '#f5f5f5',
+        '--text-6-dark': '#aaa',
+    },
+
     enumClubs: [],
     enumSocials: [],
     clubs: [],
@@ -21,15 +52,22 @@ export const user = {
     namespaced: true,
     state: initialState,
     getters: {
-        getTheme(state) {
-            return state.theme
+        getMode(state) {
+            return state.mode
+        },
+        getColors(state) {
+            return state.colors
         },
         getEnumSocials: (state) => state.enumSocials,
         getCurrentUser: (state) => state.currentUser,
     },
     actions: {
-        switchTheme({ state, commit }) {
-            commit('setTheme', state.theme === 'dark' ? 'light' : 'dark')
+        switchMode({ state, commit }) {
+            commit('setMode', state.mode === 'dark' ? 'light' : 'dark')
+        },
+
+        switchColors({ commit }, colors) {
+            commit('setColors', colors)
         },
 
         getProfile: async ({ dispatch }) => {
@@ -125,9 +163,16 @@ export const user = {
             ),
     },
     mutations: {
-        setTheme(state, theme) {
-            state.theme = theme
-            localStorage.setItem('themePreference', JSON.stringify(theme))
+        setMode(state, mode) {
+            state.mode = mode
+            localStorage.setItem('modePreference', JSON.stringify(mode))
+        },
+
+        setColors(state, colors) {
+            for (const color in colors) {
+                state.colors[color] = colors[color]
+            }
+            localStorage.setItem('colorsPreference', JSON.stringify(state.colors))
         },
 
         refreshClubs(state) {

@@ -1,9 +1,6 @@
 <template>
     <div v-if="editor">
-        <div
-            v-if="editorButtons.length > 0"
-            class="flex flex-wrap items-center px-1 pb-2 space-x-2 border-color-4"
-        >
+        <div v-if="editorButtons.length > 0" class="flex flex-wrap gap-2 items-center px-1 pb-2">
             <template v-for="(btn, i) in editorButtons" :key="i">
                 <Popper placement="top" :hover="true">
                     <div
@@ -163,7 +160,7 @@
         },
         computed: {
             dark() {
-                return this.$store.state.user.theme === 'dark'
+                return this.$store.state.user.mode === 'dark'
             },
             actionMap() {
                 return {

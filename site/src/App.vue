@@ -102,6 +102,7 @@
             }, 50)
 
             return {
+                root: document.querySelector(':root'),
                 checkResize,
                 user: new User('', '', ''),
                 smallScreen: isScreenSmallerThan(breakWidth),
@@ -120,7 +121,7 @@
             },
         },
         created() {
-            document.querySelector(':root').className = this.$store.state.user.theme
+            document.querySelector(':root').className = this.$store.state.user.mode
             const cookie = this.$cookies.get('accessTokenExpiresAt')
             if (cookie && cookie < Date.now()) {
                 this.$emitter.emit('logout')
@@ -128,11 +129,22 @@
         },
         mounted() {
             watch(
-                () => this.$store.getters['user/getTheme'],
-                (theme) => {
-                    document.querySelector(':root').className = theme
+                () => this.$store.getters['user/getMode'],
+                (mode) => {
+                    document.querySelector(':root').className = mode
                 },
             )
+
+            Object.keys(this.$store.getters['user/getColors']).forEach((color) => {
+                this.root.style.setProperty(color, this.$store.getters['user/getColors'][color])
+                this.$watch(
+                    () => this.$store.getters['user/getColors'][color],
+                    (newValue) => {
+                        console.log('changed')
+                        this.root.style.setProperty(color, newValue)
+                    },
+                )
+            })
 
             this.$emitter.on('login', () => {
                 this.toggleLogin()
