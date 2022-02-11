@@ -50,6 +50,10 @@ const routes = [
         component: () => import('@/views/Guide/GuideMain.vue')
     },
     {
+        path: '/guide/new',
+        component: () => import('@/views/Guide/GuideNew.vue')
+    },
+    {
         path: '/guide/contacts',
         component: () => import('@/views/Guide/GuideContacts.vue')
     },
@@ -58,7 +62,22 @@ const routes = [
         path: '/posts/:id',
         component: () => import('@/views/Thread/ThreadCompactView.vue'),
     },
-
+    {
+        path: '/guide/bons-plans',
+        component: () => import('@/views/Guide/GuideBonPlan.vue')
+    },
+    {
+        path: '/guide/international',
+        component: () => import('@/views/Guide/GuideInternational.vue')
+    },
+    {
+        path: '/guide/rattrapage',
+        component: () => import('@/views/Guide/GuideRattrapages.vue')
+    },
+    {
+        path: '/guide/partenariats',
+        component: () => import('@/views/Guide/GuidePartenariat.vue')
+    },
     {
         path: '/docs',
         component: () => import('@/views/Document/DocumentList.vue'),

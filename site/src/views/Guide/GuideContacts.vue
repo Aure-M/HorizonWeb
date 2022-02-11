@@ -1,262 +1,320 @@
 <template lang="">
-    <!-- component -->
-    <!-- MDI Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
-    >
-
-    <!-- Page Container -->
-    <div class="flex items-center justify-center min-h-screen bg-white py-48">
-        <div class="flex flex-col">
-            <div class="flex flex-col mt-8">
-                <!-- Meet the Team -->
-                <div class="container max-w-7xl px-4">
-                    <!-- Section Header -->
-                    <div class="flex flex-wrap justify-center text-center mb-24">
-                        <div class="w-full lg:w-6/12 px-4">
-                            <!-- Header -->
-                            <h1 class="text-gray-900 text-4xl font-bold mb-8">
-                                Meet the Team
-                            </h1>
-
-                            <!-- Description -->
-                            <p class="text-gray-700 text-lg font-light">
-                                With over 100 years of combined experience, we've got a well-seasoned team at the helm.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Team Members -->
-                    <div class="flex flex-wrap">
-                        <!-- Member #1 -->
-                        <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                            <div class="flex flex-col">
-                                <!-- Avatar -->
-                                <a href="#">
-                                    <img
-                                        class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                                        src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80"
-                                    >
-                                </a>
-
-                                <!-- Details -->
-                                <div class="text-center mt-6">
-                                    <!-- Name -->
-                                    <h1 class="text-gray-900 text-xl font-bold mb-1">
-                                        Tranter Jaskulski
-                                    </h1>
-
-                                    <!-- Title -->
-                                    <div class="text-gray-700 font-light mb-2">
-                                        Founder & Specialist
-                                    </div>
-
-                                    <!-- Social Icons -->
-                                    <div
-                                        class="flex items-center justify-center opacity-50 hover:opacity-100
-                                    transition-opacity duration-300"
-                                    >
-                                        <!-- Linkedin -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-linkedin text-indigo-500 mx-auto mt-2" />
-                                        </a>
-
-                                        <!-- Twitter -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-twitter text-blue-300 mx-auto mt-2" />
-                                        </a>
-
-                                        <!-- Instagram -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Member #2 -->
-                        <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                            <div class="flex flex-col">
-                                <!-- Avatar -->
-                                <a href="#">
-                                    <img
-                                        class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                                        src="https://images.unsplash.com/photo-1634896941598-b6b500a502a7?fit=clamp&w=400&h=400&q=80"
-                                    >
-                                </a>
-
-                                <!-- Details -->
-                                <div class="text-center mt-6">
-                                    <!-- Name -->
-                                    <h1 class="text-gray-900 text-xl font-bold mb-1">
-                                        Denice Jagna
-                                    </h1>
-
-                                    <!-- Title -->
-                                    <div class="text-gray-700 font-light mb-2">
-                                        Tired & M. Specialist
-                                    </div>
-
-                                    <!-- Social Icons -->
-                                    <div
-                                        class="flex items-center justify-center opacity-50 hover:opacity-100
-                                    transition-opacity duration-300"
-                                    >
-                                        <!-- Linkedin -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2" />
-                                        </a>
-
-                                        <!-- Twitter -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2" />
-                                        </a>
-
-                                        <!-- Instagram -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Member #3 -->
-                        <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                            <div class="flex flex-col">
-                                <!-- Avatar -->
-                                <a href="#">
-                                    <img
-                                        class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                                        src="https://images.unsplash.com/photo-1634193295627-1cdddf751ebf?fit=clamp&w=400&h=400&q=80"
-                                    >
-                                </a>
-
-                                <!-- Details -->
-                                <div class="text-center mt-6">
-                                    <!-- Name -->
-                                    <h1 class="text-gray-900 text-xl font-bold mb-1">
-                                        Kenji Milton
-                                    </h1>
-
-                                    <!-- Title -->
-                                    <div class="text-gray-700 font-light mb-2">
-                                        Team Memeber
-                                    </div>
-
-                                    <!-- Social Icons -->
-                                    <div
-                                        class="flex items-center justify-center opacity-50 hover:opacity-100
-                                    transition-opacity duration-300"
-                                    >
-                                        <!-- Linkedin -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2" />
-                                        </a>
-
-                                        <!-- Twitter -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2" />
-                                        </a>
-
-                                        <!-- Instagram -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Member #4 -->
-                        <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                            <div class="flex flex-col">
-                                <!-- Avatar -->
-                                <a href="#">
-                                    <img
-                                        class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                                        src="https://images.unsplash.com/photo-1635003913011-95971abba560?fit=clamp&w=400&h=400&q=80"
-                                    >
-                                </a>
-
-                                <!-- Details -->
-                                <div class="text-center mt-6">
-                                    <!-- Name -->
-                                    <h1 class="text-gray-900 text-xl font-bold mb-1">
-                                        Doesn't matter
-                                    </h1>
-
-                                    <!-- Title -->
-                                    <div class="text-gray-700 font-light mb-2">
-                                        Will be fired
-                                    </div>
-
-                                    <!-- Social Icons -->
-                                    <div
-                                        class="flex items-center justify-center opacity-50 hover:opacity-100
-                                    transition-opacity duration-300"
-                                    >
-                                        <!-- Linkedin -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2" />
-                                        </a>
-
-                                        <!-- Twitter -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2" />
-                                        </a>
-
-                                        <!-- Instagram -->
-                                        <a
-                                            href="#"
-                                            class="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                                        >
-                                            <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <section class="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px]">
+        <div class="container">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4">
+                    <div class="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
+                        <span class="font-semibold text-lg text-primary mb-2 block text-2">
+                            Efrei
+                        </span>
+                        <h2
+                            class="
+                  font-bold
+                  text-3xl
+                  sm:text-4xl
+                  md:text-[40px]
+                  text-2
+                  mb-4
+                  "
+                        >
+                            CONTACTS
+                        </h2>
+                        <p class="text-base text-body-color text-6">
+                            Tu trouveras ici les contacts à connaître à  Efrei
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 mL:grid-cols-3 xl:grid-cols-3 gap-5">
+                <div class="flex flex-col items-center justify-center bg-1 p-4 shadow rounded-lg">
+                    <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+                        <img
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+                            alt=""
+                            class="h-full w-full"
+                        >
+                    </div>
+
+                    <h2 class="mt-4 font-bold text-2xl text-1">
+                        Rana Farha
+                    </h2>
+                    <h6 class="mt-2 text-sm font-medium text-3">
+                        Directrice des études cycle L
+                    </h6>
+
+                    <p class="text-xs text-gray-500 text-center mt-3 text-6">
+                        rana.farha@efrei.fr
+                    </p>
+                    <ul class="flex flex-row mt-4 space-x-2">
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center justify-center bg-1 p-4 shadow rounded-lg">
+                    <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+                        <img
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+                            alt=""
+                            class="h-full w-full"
+                        >
+                    </div>
+
+                    <h2 class="mt-4 font-bold text-xl text-1">
+                        Nicolas Sicard
+                    </h2>
+                    <h6 class="mt-2 text-sm font-medium text-3">
+                        Directeur des études
+                    </h6>
+
+                    <p class="text-xs text-gray-500 text-center mt-3 text-6">
+                        nicolas.sicard@efrei.fr
+                    </p>
+
+                    <ul class="flex flex-row mt-4 space-x-2">
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center justify-center bg-1 p-4 shadow rounded-lg">
+                    <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+                        <img
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+                            alt=""
+                            class="h-full w-full"
+                        >
+                    </div>
+
+                    <h2 class="mt-4 font-bold text-xl text-1">
+                        Fernado Pereira
+                    </h2>
+                    <h6 class="mt-2 font-medium text-3">
+                        Responsable Campus
+                    </h6>
+
+                    <p class="text-xs text-center mt-3 text-6">
+                        fernando.pereira@efrei.fr
+                    </p>
+
+                    <ul class="flex flex-row mt-4 space-x-2">
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center justify-center bg-1 p-4 shadow rounded-lg">
+                    <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+                        <img
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+                            alt=""
+                            class="h-full w-full"
+                        >
+                    </div>
+
+                    <h2 class="mt-4 font-bold text-xl text-1">
+                        Peggy Blanchin
+                    </h2>
+                    <h6 class="mt-2 font-medium text-3">
+                        Responsable des Services Généraux
+                    </h6>
+
+                    <p class="text-xs text-center mt-3 text-6">
+                        peggy.blanchin@efrei.fr
+                    </p>
+
+                    <ul class="flex flex-row mt-4 space-x-2">
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center justify-center bg-1 p-4 shadow rounded-lg">
+                    <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+                        <img
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+                            alt=""
+                            class="h-full w-full"
+                        >
+                    </div>
+
+                    <h2 class="mt-4 font-bold text-xl text-1">
+                        Cécile Durand
+                    </h2>
+                    <h6 class="mt-2 font-medium text-3">
+                        Référente Egalité des Chances et Handicap
+                    </h6>
+
+                    <p class="text-xs text-center mt-3 text-6">
+                        cecile.durand@efrei.fr
+                    </p>
+
+                    <ul class="flex flex-row mt-4 space-x-2">
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center justify-center bg-1 p-4 shadow rounded-lg">
+                    <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+                        <img
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+                            alt=""
+                            class="h-full w-full"
+                        >
+                    </div>
+
+                    <h2 class="mt-4 font-bold text-xl text-1">
+                        Pascal Le Sager
+                    </h2>
+                    <h6 class="mt-2 font-medium text-3">
+                        Responsable pédagogique L1
+                    </h6>
+
+                    <p class="text-xs text-center mt-3 text-6">
+                        pascal.le.sager@efrei.fr
+                    </p>
+
+                    <ul class="flex flex-row mt-4 space-x-2">
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href=""
+                                class="flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800"
+                            >
+                                <i class="fab fa-instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 </template>
 <script>
 export default {

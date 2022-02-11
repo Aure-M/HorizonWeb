@@ -19,7 +19,7 @@
                   text-3xl
                   sm:text-4xl
                   md:text-[40px]
-                  text-dark
+                  text-2
                   mb-4
                   "
                         >
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-4/5 mt-4 mb-8">
+            <div class="mt-4 mb-8 place-content-center">
                 <div class="relative">
                     <svg
                         class="absolute top-0 mt-6 ml-6 w-8 h-8 text-gray-600"
@@ -58,7 +58,7 @@
                         />
                     </svg>
                     <input
-                        class="text-3xl placeholder-gray-600 text-gray-800 pb-4 pt-5 pl-20 pr-4 rounded w-full border-b-4 focus:outline-none focus:border-blue-800"
+                        class="text-2xl bg-1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    xl placeholder-gray-400 text-gray-800 pb-4 pt-5 pl-20 pr-4 rounded w-full border-b-4 focus:outline-none focus:border-blue-800"
                         type="text"
                         placeholder="Que cherchez-vous?"
                     >
@@ -75,7 +75,7 @@
                bg-white
                shadow-md
                hover:shadow-lg
-               mb-8
+               mb-8 bg-1
                "
                     >
                         <div
@@ -103,10 +103,10 @@
                                 />
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-xl text-dark mb-3">
+                        <h4 class="font-semibold text-xl text-dark mb-3 text-3">
                             Associations
                         </h4>
-                        <p class="text-body-color">
+                        <p class="text-body-color text-6">
                             Guide des associations actives d'Efrei./ Guide de la vie Associative d'Efrei.
                         </p>
                     </div>
@@ -121,7 +121,7 @@
                bg-white
                shadow-md
                hover:shadow-lg
-               mb-8
+               mb-8 bg-1
                "
                     >
                         <div
@@ -157,10 +157,10 @@
                                 />
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-xl text-dark mb-3">
+                        <h4 class="font-semibold text-xl text-dark mb-3 text-3">
                             Bons Plans
                         </h4>
-                        <p class="text-body-color">
+                        <p class="text-body-color text-6">
                             Les bons plans à connaître c'est par ici.
                         </p>
                     </div>
@@ -175,7 +175,7 @@
                bg-white
                shadow-md
                hover:shadow-lg
-               mb-8
+               mb-8 bg-1
                "
                     >
                         <div
@@ -215,10 +215,10 @@
                                 />
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-xl text-dark mb-3">
+                        <h4 class="font-semibold text-xl text-dark mb-3 text-3">
                             International
                         </h4>
-                        <p class="text-body-color">
+                        <p class="text-body-color text-6">
                             Les infos sur l'international.
                         </p>
                     </div>
@@ -233,7 +233,7 @@
                bg-white
                shadow-md
                hover:shadow-lg
-               mb-8
+               mb-8 bg-1
                "
                     >
                         <div
@@ -273,10 +273,10 @@
                                 />
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-xl text-dark mb-3">
+                        <h4 class="font-semibold text-xl text-dark mb-3 text-3">
                             Contacts
                         </h4>
-                        <p class="text-body-color">
+                        <p class="text-body-color text-6">
                             Les coordonnées à connaître.
                         </p>
                     </div>
@@ -291,7 +291,7 @@
                bg-white
                shadow-md
                hover:shadow-lg
-               mb-8
+               mb-8 bg-1
                "
                     >
                         <div
@@ -319,10 +319,10 @@
                                 />
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-xl text-dark mb-3">
+                        <h4 class="font-semibold text-xl text-dark mb-3 text-3">
                             Partenariats
                         </h4>
-                        <p class="text-body-color">
+                        <p class="text-body-color text-6">
                             Partenariats d'Efrei.
                         </p>
                     </div>
@@ -337,7 +337,7 @@
                bg-white
                shadow-md
                hover:shadow-lg
-               mb-8
+               mb-8 bg-1
                "
                     >
                         <div
@@ -369,25 +369,25 @@
                                 />
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-xl text-dark mb-3">
+                        <h4 class="font-semibold text-xl text-dark mb-3 text-3">
                             Rattrapages
                         </h4>
-                        <p class="text-body-color">
+                        <p class="text-body-color text-6">
                             Infos sur les rattrapages à Efrei.
                         </p>
                     </div>
                 </div>
             </div>
             <!-- component Newsletter -->
-            <body class="flex items-center justify-center h-screen">
+            <body class="h-screen">
                 <!-- card container -->
                 <div class="container px-4 sm:px-8 mx-auto max-w-lg">
                     <!-- card wrapper -->
-                    <div class="wrapper rounded-sm shadow-lg bg-2">
+                    <div class="wrapper rounded-sm shadow-lg">
                         <div class="card px-8 py-4">
                             <div class="card-image mt-10 mb-6">
                                 <svg
-                                    class="w-10 h-10 text-orange-500 fill-current"
+                                    class="w-10 h-10 text-blue-500 fill-current"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="512"
                                     height="512.002"
@@ -403,10 +403,10 @@
                             </div>
 
                             <div class="card-text">
-                                <h1 class="text-xl md:text-2xl font-bold leading-tight text-gray-900">
+                                <h1 class="text-xl md:text-2xl font-bold leading-tight text-3">
                                     Reçois un mail en cas de modifications du guide!
                                 </h1>
-                                <p class="text-base md:text-lg text-gray-700 mt-3 ">
+                                <p class="text-base md:text-lg text-6 mt-3 ">
                                     Reste d'actualité.
                                 </p>
                             </div>
@@ -417,7 +417,7 @@
                                     class="border-l border-t border-b border-gray-200 rounded-l-md w-full text-base md:text-lg px-3 py-2"
                                     placeholder="Entrer votre mail Efrei"
                                 >
-                                <button class="bg-orange-500 hover:bg-orange-600 hover:border-orange-600 text-white font-bold capitalize px-3 py-2 text-base md:text-lg rounded-r-md border-t border-r border-b border-orange-500">
+                                <button class="bg-blue-500 hover:bg-blue-600 hover:border-blue-600 text-white font-bold capitalize px-3 py-2 text-base md:text-lg rounded-r-md border-t border-r border-b border-blue-500">
                                     S'abonner
                                 </button>
                             </div>
